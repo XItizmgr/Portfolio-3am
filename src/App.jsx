@@ -6,7 +6,7 @@ export function App() {
 
   return (
     <ReactLenis root>
-      <div className="w-full bg-black text-white select-none">
+      <div className="w-full bg-(--) text-white select-none">
         <Loader />
       </div>
     </ReactLenis>
