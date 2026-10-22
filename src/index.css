@@ -1,18 +1,29 @@
 @import "tailwindcss";
-@import 'lenis/dist/lenis.css';
+@import "lenis/dist/lenis.css";
 @import "remixicon/fonts/remixicon.css";
 
-@font-face {
-    font-family: "Halloween";
-    src: url("/fonts/Halloween.ttf") format("truetype");
-}
-@font-face {
-    font-family: "Minecraft";
-    src: url("/fonts/Minecraft.ttf") format("truetype");
+@theme {
+  --bg: #070709;
+  --surface: #192024;
+  --surface-light: #34444B;
+  --text: #F5EDE4;
+  --text-muted: #9DAEBA;
+  --accent: #B06533;
+  --accent-hover: #E07838;
+  --red: #AE1918;
 }
 
-::-webkit-scrollbar{
-    width: 0.1px;
-    height: 0.1px;
-    background-color: black;
+@font-face {
+  font-family: "Halloween";
+  src: url("/fonts/Halloween.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Minecraft";
+  src: url("/fonts/Minecraft.ttf") format("truetype");
+}
+
+::-webkit-scrollbar {
+  width: 0.1px;
+  height: 0.1px;
+  background-color: black;
 }
