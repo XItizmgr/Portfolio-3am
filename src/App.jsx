@@ -1,11 +1,14 @@
-import { ScrollTrigger,SplitText } from "gsap/all";
-gsap.registerPlugin(ScrollTrigger,SplitText)
-function App() {
-return(
-  <main className="">
-    
-  </main>
-)
-}
+import React from "react";
+import ReactLenis, { useLenis } from "lenis/react";
+import Loader from "./components/Loader";
+export function App() {
+  const lenis = useLenis();
 
-export default App
+  return (
+    <ReactLenis root>
+      <div className="w-full bg-black text-white select-none">
+        <Loader />
+      </div>
+    </ReactLenis>
+  );
+}
