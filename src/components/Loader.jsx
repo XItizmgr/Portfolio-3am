@@ -39,16 +39,15 @@ function Loader(props) {
       <div className="loader-content h-[20vh] w-[60vw] flex justify-center items-center">
         <span className="loader-name font-bold font-[Halloween] text-3xl mb-20">Xitiz</span>
 
-        <div className="logo-overlay z-10">        
+        <div className="logo-overlay z-10">
           <div className="loader-label flex justify-between items-center w-[20vw] mt-[1vw]">
             <h1 className="font-[Minecraft]">Loading...</h1>
             <p className="font-[Minecraft]">{Math.round(progress)}%</p>
           </div>
-        
         </div>
-          <div className="loading-line ">
-            <div className="loading-progress" style={{ width: `${progress}%` }} />
-          </div>
+        <div className="loading-line ">
+          <div className="loading-progress" style={{ width: `${progress}%` }} />
+        </div>
       </div>
     </div>
   );
